@@ -1,0 +1,25 @@
+var information = {
+    id: "",
+    name: "",
+    phone: "",
+    address: ""
+};
+function getAndSaveUserInfo() {
+    information.id = prompt("Nhập ID:");
+    information.name = prompt("Nhập tên:");
+    information.phone = prompt("Nhập số điện thoại:");
+    information.address = prompt("Nhập địa chỉ:");
+    console.log("Thông tin cá nhân:");
+    console.log("ID: " + information.id);
+    console.log("Tên: " + information.name);
+    console.log("Số điện thoại: " + information.phone);
+    console.log("Địa chỉ: " + information.address);
+}
+getAndSaveUserInfo();
+delete information.address;
+information.email = prompt("Nhập email:");
+console.log("Thông tin cá nhân sau khi thay đổi:");
+console.log("ID: " + information.id);
+console.log("Tên: " + information.name);
+console.log("Số điện thoại: " + information.phone);
+console.log("Email: " + information.email);
